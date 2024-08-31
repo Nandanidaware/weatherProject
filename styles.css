@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+header {
+    background-color: rgb(6, 34, 65); 
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:90px;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+header nav {
+    margin-bottom: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#search-container {
+    margin-bottom: 2em;
+    margin-left: 500px;
+}
+#fetch-weather{
+    background-color: #4CAF50;
+    color: white;
+    height: 30px;
+    width: 150px;
+}
+#weather-input{
+    height: 20px;
+}
+main {
+    padding: 2em;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#weather-result {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#forecast-result {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 2em;
+}
+
+.forecast-card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1em;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.forecast-card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.forecast-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.forecast-card .temp {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+.forecast-card .description {
+    font-size: 1em;
+    color: #666;
+}
+.post{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#blog {
+    margin-top: 2em;
+}
+
+#blog h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#blog article {
+    margin-bottom: 1.5em;
+}
+
+footer {
+    background-color: rgb(27, 69, 91); 
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+nav ul li a{
+    margin-left: 30px;
+}
+/* Blog Section */
+#blog-posts {
+    margin-top: 2em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#blog-posts h1 {
+    font-size: 2em;
+    color: #063445;
+    margin-bottom: 1.5em;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+.post {
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2em;
+    padding: 1.5em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.post h2 {
+    font-size: 1.8em;
+    color: #063445; 
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+}
+
+.post p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.post .read-more {
+    font-size: 1.1em;
+    color: #4CAF50; 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post .read-more:hover {
+    text-decoration: underline;
+    color: #388E3C;
+}
+/* About Section */
+#about {
+    margin-top: 3em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; 
+}
+
+/* Privacy Policy Section */
+#privacy {
+    margin-top: 3em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; 
+}
+
+/* Contact Section */
+#contact-form {
+ 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    
+}
+
+
+#terms{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    #about,
+    #privacy-policy,
+    #contact,
+    #terms-conditions {
+        padding: 1em;
+    }
+
+    #about p,
+    #privacy-policy p,
+    #contact p,
+    #terms-conditions p {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    #forecast-result {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-card {
+        width: 90%;
+    }
+}
